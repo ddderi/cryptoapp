@@ -17,9 +17,9 @@ function priceFixed(price, float){
   return (
      <>
      <Routes>
-       <Route path='/home/*' element={ <Home favorites={favorites} setFavorites={setFavorites} />} />
+       <Route path='/' element={ <Home favorites={favorites} setFavorites={setFavorites} />} />
        <Route path='/favorites' element={ <Favorites favorites={favorites} priceFixed={priceFixed}/>}  />
-       <Route path='contact' element={ <Contact /> }/>
+       <Route path='/contact' element={ <Contact /> }/>
     </Routes>
     </>
   );

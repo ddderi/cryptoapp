@@ -12,7 +12,7 @@ function Home({ favorites, setFavorites }) {
  <header className="App-header"> 
         Crypto app
        <nav>
-            <Link to='/home'>Home</Link> 
+            <Link to='/'>Home</Link> 
             <Link to='/favorites' >Favorites</Link>
             <Link to='/contact'>Contact</Link>
        </nav>
