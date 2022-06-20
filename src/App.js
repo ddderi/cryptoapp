@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/style.css';
+import {useState} from 'react'
+import { Routes, Route } from "react-router-dom"
+import Contact from './routes/Contact';
+import Favorites from './routes/Favorites';
+import Home from './routes/Home'
 
 function App() {
+
+const [favorites, setFavorites] = useState([])
+
+function priceFixed(price, float){
+  return price.toFixed(float)
+}
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <>
+     <Routes>
+       <Route path='/home/*' element={ <Home favorites={favorites} setFavorites={setFavorites} />} />
+       <Route path='/favorites' element={ <Favorites favorites={favorites} priceFixed={priceFixed}/>}  />
+       <Route path='contact' element={ <Contact /> }/>
+    </Routes>
+    </>
   );
 }
 
