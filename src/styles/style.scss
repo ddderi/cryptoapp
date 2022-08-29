@@ -7,7 +7,7 @@ $tableColor: #ddd;
 $tableHover: #ddd;
 $tableHeaderColor:  #04AA6D;
 $ecritureHeaderColor: white;
-$linkColor: black;
+$linkColor: white;
 
 @media screen and  (min-width: 769px) {
   
@@ -96,6 +96,9 @@ body {
   margin-left: 0;
 }
 
+a, a:visited, a:hover, a:active {
+  color: white;
+}
 
 table tr td {
   padding: 0;
@@ -136,7 +139,7 @@ table{
     text-decoration: none;
     color: white;
   }
-
+  
 nav > a{
   color: white;
   text-decoration: none;
@@ -164,7 +167,7 @@ nav > a{
 
 a:link{
   text-decoration: none;
-  color: $linkColor;
+  color: inherit;
 }
 
 a:hover {
