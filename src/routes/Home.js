@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/style.css';
 import Cryptocont from '../containers/Cryptocont';
 import Newscont from '../containers/Newscont';
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 function Home({ favorites, setFavorites }) {
