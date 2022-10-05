@@ -2,7 +2,7 @@ import React from 'react'
 import {useTable} from 'react-table'
 import { COLUMNS } from './columns'
 
-export default function Basictable({ crypto, setFavorites, favorites, filtered, search, whichHandle }) {
+export default function Basictable({ crypto, filtered, search, whichHandle }) {
 
 function display(){
   if(search){

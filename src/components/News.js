@@ -1,17 +1,7 @@
 import React from 'react'
-import Moment from 'react-moment';
-// import moment from 'moment';
-
-// INSTALL MOMENT !!!!
-
-function News({ news}) {
-
-  // function myDate(d) { 
-  //   let mydd = moment(d*1000).format("Do MMMM YYYY")
-  //    return mydd
-  //   } 
 
 
+function News({ news }) {
 
   return (
   <>

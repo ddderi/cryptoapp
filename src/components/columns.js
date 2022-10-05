@@ -25,8 +25,3 @@ export const COLUMNS = [
         <button  style={{height: '80%', width: '98%'}}>Add to favourites</button>
     }
 ]
-//e => {console.log(e.data)}
-//onClick={e=>console.log(e.target.row)}
-//Cell: e => {
-    // console.log(e) // viewIndex here
-    // return e.original.name
